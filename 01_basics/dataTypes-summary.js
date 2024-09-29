@@ -13,7 +13,7 @@ let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-console.log(id === anotherId);
+//console.log(id === anotherId);
 const bigNumber = 3456546594439485454854095443845848548548n
 
 
@@ -31,10 +31,10 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log("Hello World");       //Function
+   // console.log("Hello World");       //Function
     
 }
-console.log(typeof heros);
+//console.log(typeof heros);
 
               // Primitive
 
@@ -51,3 +51,31 @@ console.log(typeof heros);
         //   Arrays => object
         //   Function => function
         //   Object => object
+
+        // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+              // memory
+
+        //  Stack  (Primitive) ,  Heap  (Non Primitive)
+            //  => copy              => reference
+
+
+    let username = "harshkumar"
+    let myname = username
+    myname = "anurag"          // => primitive: copied
+    console.log(username);
+    console.log(myname);
+
+    let userOne = {
+        email : "harsh@google.com"
+        
+    }
+
+    let userTwo = userOne
+    userTwo.email = "kumar@google.com"    // => non-primitive: reference
+
+    console.log(userOne.email);
+    console.log(userTwo.email);
+    
+    
+    
+    
